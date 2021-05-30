@@ -1,0 +1,194 @@
+@import 'variables';
+
+/*
+Configuración de la animación de la página de presentación
+*/
+
+#Unknown_Area_Type_spain_provinces_ind_2_shp {
+  fill:#ffffd0;
+  fill-opacity:1;
+}
+
+/*
+  Dividimos el tiempo en 5 pasos de 20%.
+  Cada isla tiene su animación en este lapso de tiempo
+  Durante este 20% cambia su fill y las propiedades del texto que la acompaña
+*/
+
+@keyframes mallorca {
+ 0% {
+    fill:#ffffd0;
+  }
+ 20% {
+    fill:lightcoral;
+  }
+  21%, 100% {
+    fill:#ffffd0;
+  }
+}
+
+@keyframes mallorca-txt {
+  0% {
+    opacity: 0;
+    font-size: 2em;
+  }
+  20% {
+    opacity: 1;
+    font-size: 4em;
+  }
+  21%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes menorca {
+  0%, 19% {
+    fill:#ffffd0;
+  }
+ 40% {
+    fill:lightcoral;
+  }
+  41%, 100% {
+    fill:#ffffd0;
+  }
+}
+
+@keyframes menorca-txt {
+  0%, 19% {
+    opacity: 0;
+    font-size: 2em;
+  }
+  40% {
+    opacity: 1;
+    font-size: 4em; 
+  }
+  41%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes ibiza {
+  0%, 39% {
+    fill:#ffffd0;
+  }
+ 60% {
+    fill:lightcoral;
+  }
+  61%, 100% {
+    fill:#ffffd0;
+  }
+}
+
+@keyframes ibiza-txt {
+  0%, 39% {
+    opacity: 0;
+    font-size: 2em;
+  }
+  60% {
+    opacity: 1;
+    font-size: 4em; 
+  }
+  61%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes formentera {
+  0%, 59% {
+    fill:#ffffd0;
+  }
+ 80% {
+    fill:lightcoral;
+  }
+  81%, 100% {
+    fill:#ffffd0;
+  }
+}
+
+@keyframes formentera-txt {
+  0%, 59% {
+    opacity: 0;
+    font-size: 2em;
+  }
+  80% {
+    opacity: 1;
+    font-size: 4em; 
+  }
+  81%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cabrera {
+  0%, 79% {
+    fill:#ffffd0;
+  }
+ 100% {
+    fill:lightcoral;
+  }
+}
+
+@keyframes cabrera-txt {
+  0%, 79% {
+    opacity: 0;
+    font-size: 2em;
+  }
+  100% {
+    opacity: 1;
+    font-size: 4em;
+  }
+}
+
+/*
+Formato por defecto del texto del svg
+*/
+.svg-txt {
+  fill: rgb(51, 51, 51); 
+  font-size: 2em; 
+  white-space: pre;  
+}
+
+/*
+Vinculación de la animación del keyframe a las clases
+Se utilizan clases en lugar de id ya que imagemin elimina los id del svg al optimizarlo
+*/
+
+#mallorca-svg {
+  animation: var(--animation-time) infinite backwards mallorca;
+}
+
+#svg-mallorca-txt {
+  animation: var(--animation-time) infinite backwards mallorca-txt;
+}
+
+#menorca-svg {
+  animation: var(--animation-time) infinite backwards menorca;
+}
+
+#svg-menorca-txt {
+  animation: var(--animation-time) infinite backwards menorca-txt;
+}
+
+#ibiza-svg {
+  animation: var(--animation-time) infinite backwards ibiza;
+}
+
+#svg-ibiza-txt {
+  animation: var(--animation-time) infinite backwards ibiza-txt;
+}
+
+#formentera-svg {
+  animation: var(--animation-time) infinite backwards formentera;
+}
+
+#svg-formentera-txt {
+  animation: var(--animation-time) infinite backwards formentera-txt;
+}
+
+#cabrera-svg {
+  animation: var(--animation-time) infinite backwards cabrera;
+}
+
+#svg-cabrera-txt {
+  animation: var(--animation-time) infinite backwards cabrera-txt;
+}

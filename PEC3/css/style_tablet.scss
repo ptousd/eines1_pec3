@@ -1,0 +1,138 @@
+.globalpadding {
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+.header {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+
+/*
+Para dispositivos a partir de tablet en horizontal y con separador | 
+*/
+
+.menu-site li {
+  display: inline;
+}
+
+.menu-site li:after {
+  content: '|';
+  margin: 0.6em;
+}
+
+.menu-site li:last-child:after {
+  display: none;
+}
+
+
+/*
+Definimos la imagen de fondo sin repetir y cubriendo todo el fondo
+Tamaño 100% del viewport
+Cuando hay overflow se ocultan los elementos
+La imagen está adaptado en peso y forma al tamaño del dispositivo
+*/
+.bgd-mallorca {
+  	background-image: url('../img/Formatge_i_sobrassada_tablet.jpg');
+}
+
+/*
+Formato de la imagen superior de la composición usando clip-path
+(1) Se utilizan diferentes resoluciones de imágenes según tamaño dispositivo 
+(2) También se ajusta el formato del clip-path para una mejor 
+visualización según el formato pantalla
+*/
+
+.clip-top {
+  	background-image: url('../img/Panadescuites_tablet.jpg'); /*1*/
+    clip-path: polygon(0 0, 80% 0, 35% 50%, 0 12%); /*2*/
+}
+
+.clip-left {
+  	background-image: url('../img/Rubiolscuits_tablet.jpg'); /*1*/
+    clip-path: polygon(0 12%, 0 86%, 35% 50%); /*2*/
+}
+
+/***************************************************************
+*              SELECTORES PÁGINA CATEGORÍAS
+***************************************************************/
+
+
+/*
+La lista de categorías se mustra por columnas, por defecto se utiliza layout flex por si el navegador no soporta el layout grid
+*/
+
+.categoria__lista {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.categoria__item {
+  flex: 0 0 450px;
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+  padding-bottom: 0;
+}
+
+
+@supports (display:grid) {
+/*
+A partir de tamaño tablet utiliza grid de dos columnas si el navegador lo soporta, los items en flex para ocupar mejor el espacio
+*/
+
+  .categoria__lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+  }
+
+ .categoria__item {
+    margin-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+}
+
+
+
+/***************************************************************
+*              SELECTORES PÁGINA DETALLE
+***************************************************************/
+
+/*
+En la página detalle se visualiza la información en dos columnas en dispositivos tamaño escritorio
+ por defecto se utiliza layout flex por si el navegador no soporta el layout grid
+*/
+
+.detalle {
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.detalle__txt,
+.detalle__picture img {
+   flex: 1 1;
+}
+
+@supports (display:grid) {
+
+/* Si el navegador lo soporta se utiliza grid */
+  .detalle {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-column-gap: 1.5em;
+    padding: 0;
+  }
+}
+
+
+.presentacion__img {
+  float: right;
+  width: 50%;
+}

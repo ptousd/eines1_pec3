@@ -5,16 +5,17 @@
     <title>Gastronomía Mallorquina</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Web de comida típica de mallorca" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="preload"
+      onLoad="this.rel='stylesheet'" />
     <link rel="stylesheet" href="css/main.scss" />
+    <link rel="stylesheet" href="css/main_movil.scss" media="(max-width: 767px)" />
+    <link rel="stylesheet" href="css/main_tablet.scss" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="css/main_escritorio.scss" media="(min-width: 1224px)" />
   </head>
 
   <body>
     <header class="header">
-      <img class="img--responsive" src="img/icon.svg" alt="Icono que muestra una ensaimada típica de mallorca" />
+      <img class="img--responsive" src="img/icon.svg" width="758" height="165" alt="Icono que muestra una ensaimada típica de mallorca" />
     </header>
     <nav class="menu-site globalpadding box--highlight">
       <ul>
@@ -28,7 +29,7 @@
       <section>
         <h2>Ensaimada</h2>
         <div class="detalle">
-          <picture class="detalle__img lozad" data-alt="Foro ensaimada" data-iesrc="img/ensaimada_detalle.jpg">
+          <picture class="detalle__picture lozad" data-alt="Foro ensaimada" data-iesrc="img/ensaimada_detalle.jpg">
             <source media="(min-width: 1224px)" srcset="img/ensaimada_detalle_max.jpg">
             <source media="(min-width: 768px)" srcset="img/ensaimada_detalle_tablet.jpg">            
             <source media="(max-width: 767px)" srcset="img/ensaimada_detalle.jpg">
@@ -89,7 +90,7 @@
         <div class="receta__elaboracion box--highlight">
           <div class="receta__elaboracion-pasos">
             <h2 class="underscore">Elaboración</h2>
-            <img class="float-left lozad" data-src="img/cocinero-y-chef-imagen-animada-0049.gif" alt="Animación cocinero">
+            <img class="float-left lozad" width="85" height="108" data-src="img/cocinero-y-chef-imagen-animada-0049.gif" alt="Animación cocinero">
             <p class="receta__dificultad">Dificultad: Alta</p>
             <ul class="receta__lista-pasos">
               <li class="receta__paso dotted">
@@ -164,13 +165,13 @@
               Y para quien venga de visita a Mallorca y no le apetezca cocinar lo ideal es llevarse alguna ensaiamda como obsequio.
               Pueden comprarse en cualquier horno de las Islas y las podrá disfrutar con sus amigos y familiares
             </p>
-            <img class="detalle__img lozad" data-src="img/ensaimada_2048.jpg" alt="Ensaimada para llevar" 
+            <img class="detalle__img lozad" data-src="img/ensaimada_2048.jpg" alt="Ensaimada para llevar" width="400" height="265"
             data-srcset="img/ensaimada_160.jpg 160w, img/ensaimada_400.jpg 320w, img/ensaimada_800.jpg 640w, img/ensaimada_1024.jpg 1024w"
             sizes="(max-width: 1224px) 95vw, 65vw">          
           </div>
           <h2>Video receta</h2>
           <div class="container">
-            <iframe
+            <iframe width="552" height="310"
               class="responsive-iframe lozad"
               data-src="https://www.youtube.com/embed/YdOiW3S4D8I"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -186,7 +187,7 @@
           <li class="categoria__item">
             <figure>
               <a href="detall.html">
-                <img class="categoria__img lozad" 
+                <img class="categoria__img lozad" width="400" height="266"
                     data-srcset="img/robiols_400.jpg,
                             img/robiols_600.jpg 1.5x,
                             img/robiols_800.jpg 2x" 
@@ -198,7 +199,7 @@
           <li class="categoria__item">
             <figure>
               <a href="detall.html">
-                <img class="categoria__img lozad" 
+                <img class="categoria__img lozad" width="400" height="266"
                     data-srcset="img/crespells_400.jpg,
                             img/crespells_600.jpg 1.5x,
                             img/crespells_800.jpg 2x" 
@@ -218,7 +219,7 @@
         <li><a href="enlaces.html">Enlaces</a></li>
       </ul>
     </nav>
-    <div class="pie__copyright"><img class="footer__img lozad" data-src="img/mini_icon.svg" alt="">2021 © Pedro Tous Durán</div>
+    <div class="pie__copyright"><img class="footer__img lozad" data-src="img/mini_icon.svg" alt="Mini icono ensaimada" width="48" height="42">2021 © Pedro Tous Durán</div>
     </footer>
     <script src="js/lozad.js"></script>
   </body>

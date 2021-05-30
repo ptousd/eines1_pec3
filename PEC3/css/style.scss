@@ -45,41 +45,9 @@ abbr {
   padding-right: 1em;
 }
 
-@media only screen and (min-width: 768px) {
-  .globalpadding {
-    padding-left: 8em;
-    padding-right: 8em;
-  }
-}
-
-@media only screen and (min-width: 1224px) {
-  .simplepadding {
-    padding-left: 8em;
-    padding-right: 8em;
-  }
-
-  .globalpadding {
-    padding-left: 15em;
-    padding-right: 15em;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-.header {
-  padding-left: 25%;
-  padding-right: 25%;
-}
-}
-
-@media only screen and (min-width: 1224px) {
-.header {
-  padding-left: 30%;
-  padding-right: 30%;
-}
-}
-
 .img--responsive {
   width: 100%;
+  height: auto;
 }
 
 .underscore {
@@ -123,22 +91,6 @@ abbr {
   font-weight: 700;
 }
 
-/*
-Para dispositivos a partir de tablet en horizontal y con separador | 
-*/
-
-@media only screen and (min-width: 768px) {
-  .menu-site li {
-    display: inline;
-  }
-  .menu-site li:after {
-    content: '|';
-    margin: 0.6em;
-  }
-  .menu-site li:last-child:after {
-    display: none;
-  }
-}
 
 /***************************************************************
 *              SELECTORES HOME INDEX.HTML
@@ -174,16 +126,9 @@ La imagen está adaptado en peso y forma al tamaño del dispositivo
   top: 0;
   left: 0;
   height: 100%;
-  background-image: url('../img/Formatge_i_sobrassada_mobil.jpg');
-  @media only screen and (min-width: 768px) {
-  	background-image: url('../img/Formatge_i_sobrassada_tablet.jpg');
-  }
-  @media only screen and (min-width: 1440px) {
-  	background-image: url('../img/Formatge_i_sobrassada.jpg');
-  }
   background-repeat: no-repeat;
   background-size: cover;
-}
+  }
 
 /*
 Formato de la imagen superior de la composición usando clip-path
@@ -198,21 +143,8 @@ visualización según el formato pantalla
   left:0;
 	width: 100%;
 	height: 100%;
-	background-image: url('../img/Panadescuites_mobil.jpg');
-  @media only screen and (min-width: 768px) {
-  	background-image: url('../img/Panadescuites_tablet.jpg'); /*1*/
-  }
-  @media only screen and (min-width: 1440px) {
-  	background-image: url('../img/Panadescuites.jpg'); /*1*/
-  }
   background-repeat: no-repeat;
   background-size: cover;
-
-  clip-path: polygon(0 0, 100% 0, 100% 12%, 55% 55%, 0 12%); /*2*/
-
-  @media only screen and (min-width: 768px) {
-    clip-path: polygon(0 0, 80% 0, 35% 50%, 0 12%); /*2*/
-  }
 }
 
 .clip-left {
@@ -221,19 +153,8 @@ visualización según el formato pantalla
   bottom:0;
   width: 100%;
 	height: 100%;
-	background-image: url('../img/Rubiolscuits_mobil.jpg'); 
-  @media only screen and (min-width: 768px) {
-  	background-image: url('../img/Rubiolscuits_tablet.jpg'); /*1*/
-  }
-  @media only screen and (min-width: 1440px) {
-  	background-image: url('../img/Rubiolscuits.jpg'); /*1*/
-  }
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(0 12%, 0 100%, 12% 100%, 55% 55%); /*2*/
-  @media only screen and (min-width: 768px) {
-    clip-path: polygon(0 12%, 0 86%, 35% 50%); /*2*/
-  }
 }
 
 /***************************************************************
@@ -254,6 +175,7 @@ visualización según el formato pantalla
 
 .categoria__img {
   width: 100%;
+  height: auto;
   transition: opacity 1s;
 }
 
@@ -261,120 +183,10 @@ visualización según el formato pantalla
   opacity: 0.5;
 }
 
-/*
-La lista de categorías se mustra por columnas, por defecto se utiliza layout flex por si el navegador no soporta el layout grid
-*/
-
-@media only screen and (min-width: 768px) {
-  .categoria__lista {
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  .categoria__item {
-    flex: 0 0 450px;
-    margin-left: 1.5em;
-    margin-bottom: 1.5em;
-    padding-bottom: 0;
-  }
-}
-
-
-@supports (display:grid) {
-/*
-A partir de tamaño tablet utiliza grid de dos columnas si el navegador lo soporta, los items en flex para ocupar mejor el espacio
-*/
-
-@media only screen and (min-width: 768px) {
-  .categoria__lista {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 1.5em;
-    grid-row-gap: 1.5em;
-  }
-
- .categoria__item {
-    margin-left: 0;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- }
-
-}
-
-/*
-A partir de tamaño escritorio grid de tres columnas, los items en flex para ocupar mejor el espacio
-*/
-
-@media only screen and (min-width: 1224px) {
-  .categoria__lista {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-}
-
 
 /***************************************************************
 *              SELECTORES PÁGINA DETALLE
 ***************************************************************/
-
-/*
-En la página detalle se visualiza la información en dos columnas en dispositivos tamaño escritorio
- por defecto se utiliza layout flex por si el navegador no soporta el layout grid
-*/
-
-@media only screen and (min-width: 768px) {
-  .detalle {
-    display: flex;
-    flex-flow: row wrap;
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-
-  .detalle__txt,
-  .detalle__img img {
-     flex: 1 1;
-  }
-}
-
-@supports (display:grid) {
-
-/* Si el navegador lo soporta se utiliza grid */
-
-@media only screen and (min-width: 768px) {
-    .detalle {
-      display: grid;
-      grid-template-columns: .5fr 1fr;
-      grid-column-gap: 1.5em;
-      padding: 0;
-    }
-  }
-
-  @media only screen and (min-width: 1224px) {
-    .detalle {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-}
-
-
-@media only screen and (min-width: 768px) {
-  .presentacion__img {
-    float: right;
-    width: 50%;
-  }
-}
-
-@media only screen and (min-width: 1224px) {
-  .presentacion__img {
-    float: right;
-    width: 25%;
-  }
-}
-
 
 .float-left {
   float: left;
@@ -389,8 +201,10 @@ En la página detalle se visualiza la información en dos columnas en dispositiv
   line-height: 2em;
 }
 
-.detalle__img img {
+.detalle__picture img, 
+.detalle__img {
   width: 100%;
+  height: auto;
   margin-bottom: 2em;
 }
 
@@ -401,6 +215,7 @@ Las imagenes interiores de la página se mustran con float
 .descripcion__img-left img {
   float: left;
   width: 50%;
+  height: auto;
   margin-right: 2em;
   margin-bottom: 2em;
 }
@@ -408,36 +223,9 @@ Las imagenes interiores de la página se mustran con float
 .descripcion__img-right img {
   width: 50%;
   float: right;
+  height: auto;
   margin-left: 2em;
   margin-bottom: 2em;
-}
-
-
-/*
-La descripción de la receta junto con la foto se muestran en dos columnas en tamaño escritorio
-Por defecto se utiliza layout flex por si el navegador no soporta el layout grid
-*/
-@media only screen and (min-width: 1224px) {
-  .receta {
-    display: flex;
-    flex: row wrap;
-    padding-left: 8em;
-    padding-right: 8em;
-  }
-}
-
-@supports (display:grid) {
-  /*
-  En caso de que el navegador soporte el layout grid 
-  */
-  @media only screen and (min-width: 1224px) {
-    .receta {
-      display: grid;
-      grid-template-columns: 0.3fr 0.7fr;
-      grid-column-gap: 1.5em;
-      padding: 0;
-    }
-  }
 }
 
 .receta__elaboracion,
@@ -489,6 +277,7 @@ Las listas de ingredientes y pasos de elaboración en flex para ajustar las dos 
   position: relative;
   overflow: hidden;
   width: 100%;
+  height: auto;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
@@ -516,6 +305,7 @@ Las listas de ingredientes y pasos de elaboración en flex para ajustar las dos 
 .especialidades-item-img {
   padding-left: 3rem;
   width: 150px;
+  height: auto;
   float: right;
 }
 
@@ -524,198 +314,4 @@ Las listas de ingredientes y pasos de elaboración en flex para ajustar las dos 
   display: flex;
   flex-direction: row-reverse;
   font-size: 0.7rem;
-}
-
-
-/*
-Configuración de la animación de la página de presentación
-*/
-
-#Unknown_Area_Type_spain_provinces_ind_2_shp {
-  fill:#ffffd0;
-  fill-opacity:1;
-}
-
-/*
-  Dividimos el tiempo en 5 pasos de 20%.
-  Cada isla tiene su animación en este lapso de tiempo
-  Durante este 20% cambia su fill y las propiedades del texto que la acompaña
-*/
-
-@keyframes mallorca {
- 0% {
-    fill:#ffffd0;
-  }
- 20% {
-    fill:lightcoral;
-  }
-  21%, 100% {
-    fill:#ffffd0;
-  }
-}
-
-@keyframes mallorca-txt {
-  0% {
-    opacity: 0;
-    font-size: 2em;
-  }
-  20% {
-    opacity: 1;
-    font-size: 4em;
-  }
-  21%, 100% {
-    opacity: 0;
-  }
-}
-
-@keyframes menorca {
-  0%, 19% {
-    fill:#ffffd0;
-  }
- 40% {
-    fill:lightcoral;
-  }
-  41%, 100% {
-    fill:#ffffd0;
-  }
-}
-
-@keyframes menorca-txt {
-  0%, 19% {
-    opacity: 0;
-    font-size: 2em;
-  }
-  40% {
-    opacity: 1;
-    font-size: 4em; 
-  }
-  41%, 100% {
-    opacity: 0;
-  }
-}
-
-@keyframes ibiza {
-  0%, 39% {
-    fill:#ffffd0;
-  }
- 60% {
-    fill:lightcoral;
-  }
-  61%, 100% {
-    fill:#ffffd0;
-  }
-}
-
-@keyframes ibiza-txt {
-  0%, 39% {
-    opacity: 0;
-    font-size: 2em;
-  }
-  60% {
-    opacity: 1;
-    font-size: 4em; 
-  }
-  61%, 100% {
-    opacity: 0;
-  }
-}
-
-@keyframes formentera {
-  0%, 59% {
-    fill:#ffffd0;
-  }
- 80% {
-    fill:lightcoral;
-  }
-  81%, 100% {
-    fill:#ffffd0;
-  }
-}
-
-@keyframes formentera-txt {
-  0%, 59% {
-    opacity: 0;
-    font-size: 2em;
-  }
-  80% {
-    opacity: 1;
-    font-size: 4em; 
-  }
-  81%, 100% {
-    opacity: 0;
-  }
-}
-
-@keyframes cabrera {
-  0%, 79% {
-    fill:#ffffd0;
-  }
- 100% {
-    fill:lightcoral;
-  }
-}
-
-@keyframes cabrera-txt {
-  0%, 79% {
-    opacity: 0;
-    font-size: 2em;
-  }
-  100% {
-    opacity: 1;
-    font-size: 4em;
-  }
-}
-
-/*
-Formato por defecto del texto del svg
-*/
-.svg-txt {
-  fill: rgb(51, 51, 51); 
-  font-size: 2em; 
-  white-space: pre;  
-}
-
-/*
-Vinculación de la animación del keyframe a las clases
-Se utilizan clases en lugar de id ya que imagemin elimina los id del svg al optimizarlo
-*/
-
-#mallorca-svg {
-  animation: var(--animation-time) infinite backwards mallorca;
-}
-
-#svg-mallorca-txt {
-  animation: var(--animation-time) infinite backwards mallorca-txt;
-}
-
-#menorca-svg {
-  animation: var(--animation-time) infinite backwards menorca;
-}
-
-#svg-menorca-txt {
-  animation: var(--animation-time) infinite backwards menorca-txt;
-}
-
-#ibiza-svg {
-  animation: var(--animation-time) infinite backwards ibiza;
-}
-
-#svg-ibiza-txt {
-  animation: var(--animation-time) infinite backwards ibiza-txt;
-}
-
-#formentera-svg {
-  animation: var(--animation-time) infinite backwards formentera;
-}
-
-#svg-formentera-txt {
-  animation: var(--animation-time) infinite backwards formentera-txt;
-}
-
-#cabrera-svg {
-  animation: var(--animation-time) infinite backwards cabrera;
-}
-
-#svg-cabrera-txt {
-  animation: var(--animation-time) infinite backwards cabrera-txt;
 }

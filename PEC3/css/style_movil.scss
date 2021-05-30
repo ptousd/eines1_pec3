@@ -1,0 +1,13 @@
+.bgd-mallorca {
+  background-image: url('../img/Formatge_i_sobrassada_mobil.jpg');
+}
+
+.clip-top {
+	background-image: url('../img/Panadescuites_mobil.jpg');
+  clip-path: polygon(0 0, 100% 0, 100% 12%, 55% 55%, 0 12%); /*2*/
+}
+
+.clip-left {
+	background-image: url('../img/Rubiolscuits_mobil.jpg'); 
+  clip-path: polygon(0 12%, 0 100%, 12% 100%, 55% 55%); /*2*/
+}

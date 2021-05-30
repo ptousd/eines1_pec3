@@ -6,14 +6,18 @@
   <title>Gastronomía Mallorquina</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Web de comida típica de mallorca" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/main.scss" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="preload"
+      onLoad="this.rel='stylesheet'" />
+    <link rel="stylesheet" href="css/main.scss" />
+    <link rel="stylesheet" href="css/main_movil.scss" media="(max-width: 767px)" />
+    <link rel="stylesheet" href="css/main_tablet.scss" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="css/main_escritorio.scss" media="(min-width: 1224px)" />
 </head>
 
 <body>
   <header class="header">
-    <img class="img--responsive" src="img/icon.svg" alt="Icono que muestra una ensaimada típica de mallorca" />
+      <img class="img--responsive" src="img/icon.svg" width="758" height="165"
+        alt="Icono que muestra una ensaimada típica de mallorca" />
   </header>
   <nav class="menu-site globalpadding box--highlight">
     <ul>
@@ -185,7 +189,8 @@
         <li><a href="enlaces.html">Enlaces</a></li>
       </ul>
     </nav>
-    <div class="pie__copyright"><img class="footer__img" src="img/mini_icon.svg" alt="">2021 © Pedro Tous Durán</div>
+    <div class="pie__copyright"><img class="footer__img lozad" data-src="img/mini_icon.svg" alt="Mini icono ensaimada"
+        width="48" height="42">2021 © Pedro Tous Durán</div>
   </footer>
   <script src="js/lozad.js"></script>
 </body>
