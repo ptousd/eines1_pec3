@@ -136,3 +136,11 @@ En la página detalle se visualiza la información en dos columnas en dispositiv
   float: right;
   width: 50%;
 }
+
+/*Las imágenes de las especialidades flotan a la derecha*/
+.especialidades-item-img {
+ padding-left: 3rem;
+  width: 150px;
+  height: auto;
+  float: right;
+}

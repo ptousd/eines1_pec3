@@ -297,16 +297,19 @@ Las listas de ingredientes y pasos de elaboración en flex para ajustar las dos 
 *              SELECTORES PÁGINA PRESENTACIÓN
 ***************************************************************/
 
+.especialidades__lista {
+  padding-left: 0;
+  list-style: none;
+}
+
 .especialidades-item {
+  min-height: 110px;
   margin-bottom: 2rem;
 }
 
-/*Las imágenes de las especialidades flotan a la derecha*/
 .especialidades-item-img {
-  padding-left: 3rem;
   width: 150px;
   height: auto;
-  float: right;
 }
 
 /*Para el texto: Pulse sobre la imagen para ver presentación*/
