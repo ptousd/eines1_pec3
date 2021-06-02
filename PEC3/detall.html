@@ -1,226 +1,228 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <title>Gastronomía Mallorquina</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web de comida típica de mallorca" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="preload"
-      onLoad="this.rel='stylesheet'" />
-    <link rel="stylesheet" href="css/main.scss" />
-    <link rel="stylesheet" href="css/main_movil.scss" media="(max-width: 767px)" />
-    <link rel="stylesheet" href="css/main_tablet.scss" media="(min-width: 768px)" />
-    <link rel="stylesheet" href="css/main_escritorio.scss" media="(min-width: 1224px)" />
-  </head>
 
-  <body>
-    <header class="header">
-      <img class="img--responsive" src="img/icon.svg" width="758" height="165" alt="Icono que muestra una ensaimada típica de mallorca" />
-    </header>
-    <nav class="menu-site globalpadding box--highlight">
-      <ul>
-        <li><a href="index.html">Portada</a></li>
-        <li><a href="presentacion.html">Presentación</a></li>
-        <li><a href="categorias.html">Categorías</a></li>
-        <li><a href="enlaces.html">Enlaces</a></li>
-      </ul>
-    </nav>
-    <main class="simplepadding">
-      <section>
-        <h2>Ensaimada</h2>
-        <div class="detalle">
-          <picture class="detalle__picture lozad" data-alt="Foro ensaimada" data-iesrc="img/ensaimada_detalle.jpg">
-            <source media="(min-width: 1224px)" srcset="img/ensaimada_detalle_max.jpg">
-            <source media="(min-width: 768px)" srcset="img/ensaimada_detalle_tablet.jpg">            
-            <source media="(max-width: 767px)" srcset="img/ensaimada_detalle.jpg">
-          </picture>
-          <div class="detalle__txt box--highlight">
-            <p>
-              Los que nunca habéis probado la ensaimada de Mallorca no sabéis lo que os estáis
-              perdiendo, por eso si queréis saborear esta deliciosa receta tradicional de la
-              gastronomía balear os voy a explicar cómo prepararla en casa. Os aseguro que vale la
-              pena invertir el tiempo necesario de levado para poder disfrutar de esta masa
-              enriquecida.
-            </p>
-            <p>
-              El nombre de ensaimada deriva del término "saïm", que significa manteca, así que ya os
-              podéis hacer una idea de la cantidad tan exagerada que lleva la receta de este
-              ingrediente. Os aconsejo dejarlas levar toda la noche y hornearlas por la mañana, de
-              este modo disfrutaréis de un delicioso e inolvidable desayuno.
-            </p>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Gastronomía Mallorquina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Web de comida típica de mallorca" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="preload" onLoad="this.rel='stylesheet'" />
+  <link rel="stylesheet" href="css/main.scss" />
+  <link rel="stylesheet" href="css/main_movil.scss" media="(max-width: 767px)" />
+  <link rel="stylesheet" href="css/main_tablet.scss" media="(min-width: 768px)" />
+  <link rel="stylesheet" href="css/main_escritorio.scss" media="(min-width: 1224px)" />
+</head>
+
+<body>
+  <header class="header">
+    <img class="img--responsive" src="img/icon.svg" width="758" height="165"
+      alt="Icono que muestra una ensaimada típica de mallorca" />
+  </header>
+  <nav class="menu-site box--highlight changeable">
+    <ul>
+      <li><a class="link" href="index.html">Portada</a></li>
+      <li><a class="link" href="presentacion.html">Presentación</a></li>
+      <li><a class="link" href="categorias.html">Categorías</a></li>
+      <li><a class="link" href="enlaces.html">Enlaces</a></li>
+    </ul>
+  </nav>
+  <main class="simplepadding">
+    <section>
+      <h2>Ensaimada</h2>
+      <div class="detalle">
+        <picture class="detalle__picture lozad" data-alt="Foro ensaimada" data-iesrc="img/ensaimada_detalle.jpg">
+          <source media="(min-width: 1224px)" srcset="img/ensaimada_detalle_max.jpg">
+          <source media="(min-width: 768px)" srcset="img/ensaimada_detalle_tablet.jpg">
+          <source media="(max-width: 767px)" srcset="img/ensaimada_detalle.jpg">
+        </picture>
+        <div class="detalle__txt box--highlight">
+          <p>
+            Los que nunca habéis probado la ensaimada de Mallorca no sabéis lo que os estáis
+            perdiendo, por eso si queréis saborear esta deliciosa receta tradicional de la
+            gastronomía balear os voy a explicar cómo prepararla en casa. Os aseguro que vale la
+            pena invertir el tiempo necesario de levado para poder disfrutar de esta masa
+            enriquecida.
+          </p>
+          <p>
+            El nombre de ensaimada deriva del término "saïm", que significa manteca, así que ya os
+            podéis hacer una idea de la cantidad tan exagerada que lleva la receta de este
+            ingrediente. Os aconsejo dejarlas levar toda la noche y hornearlas por la mañana, de
+            este modo disfrutaréis de un delicioso e inolvidable desayuno.
+          </p>
         </div>
-      </section>
-      <section class="receta">
-        <div class="receta__ingredientes box--highlight">
-          <h2 class="underscore">Ingredientes</h2>
-          <p>Para 6 unidades</p>
-          <ul class="receta__lista-ingredientes">
-            <li class="receta__ingrediente dotted">
-              <p class="receta__descripcion">Harina de fuerza</p>
-              <p class="receta__cantidad">400 <abbr title="gramos">g</abbr></p>
+      </div>
+    </section>
+    <section class="receta">
+      <div class="receta__ingredientes box--highlight">
+        <h2 class="underscore">Ingredientes</h2>
+        <p>Para 6 unidades</p>
+        <ul class="receta__lista-ingredientes">
+          <li class="receta__ingrediente dotted">
+            <p class="receta__descripcion">Harina de fuerza</p>
+            <p class="receta__cantidad">400 <abbr title="gramos">g</abbr></p>
+          </li>
+          <li class="receta__ingrediente dotted">
+            <p class="receta__descripcion">Levadura prensada</p>
+            <p class="receta__cantidad">15 <abbr title="gramos">g</abbr></p>
+          </li>
+          <li class="receta__ingrediente dotted">
+            <p class="receta__descripcion">Huevos</p>
+            <p class="receta__cantidad">1 <abbr title=""></abbr></p>
+          </li>
+          <li class="receta__ingrediente dotted">
+            <p class="receta__descripcion">Agua</p>
+            <p class="receta__cantidad">150 <abbr title="gramos">g</abbr></p>
+          </li>
+          <li class="receta__ingrediente dotted">
+            <p class="receta__descripcion">Azúcar</p>
+            <p class="receta__cantidad">120 <abbr title="gramos">g</abbr></p>
+          </li>
+          <li class="receta__ingrediente">
+            <p>Sal un pellizco</p>
+          </li>
+          <li class="receta__ingrediente">
+            <p>Manteca de cerdo</p>
+          </li>
+          <li class="receta__ingrediente">
+            <p>Azúcar glas para espolvorear</p>
+          </li>
+        </ul>
+      </div>
+      <div class="receta__elaboracion box--highlight">
+        <div class="receta__elaboracion-pasos">
+          <h2 class="underscore">Elaboración</h2>
+          <img class="float-left lozad" width="85" height="108" data-src="img/cocinero-y-chef-imagen-animada-0049.gif"
+            alt="Animación cocinero">
+          <p class="receta__dificultad">Dificultad: Alta</p>
+          <ul class="receta__lista-pasos">
+            <li class="receta__paso dotted">
+              <p class="receta__descripcion">Tiempo total</p>
+              <p class="receta__cantidad">
+                12 <abbr title="hora">h </abbr>12 <abbr title="minutos">m</abbr>
+              </p>
             </li>
-            <li class="receta__ingrediente dotted">
-              <p class="receta__descripcion">Levadura prensada</p>
-              <p class="receta__cantidad">15 <abbr title="gramos">g</abbr></p>
+            <li class="receta__paso dotted">
+              <p class="receta__descripcion">Elaboración</p>
+              <p class="receta__cantidad">12 <abbr title="hora">h </abbr></p>
             </li>
-            <li class="receta__ingrediente dotted">
-              <p class="receta__descripcion">Huevos</p>
-              <p class="receta__cantidad">1 <abbr title=""></abbr></p>
-            </li>
-            <li class="receta__ingrediente dotted">
-              <p class="receta__descripcion">Agua</p>
-              <p class="receta__cantidad">150 <abbr title="gramos">g</abbr></p>
-            </li>
-            <li class="receta__ingrediente dotted">
-              <p class="receta__descripcion">Azúcar</p>
-              <p class="receta__cantidad">120 <abbr title="gramos">g</abbr></p>
-            </li>
-            <li class="receta__ingrediente">
-              <p>Sal un pellizco</p>
-            </li>
-            <li class="receta__ingrediente">
-              <p>Manteca de cerdo</p>
-            </li>
-            <li class="receta__ingrediente">
-              <p>Azúcar glas para espolvorear</p>
+            <li class="receta__paso dotted">
+              <p class="receta__descripcion">Cocción</p>
+              <p class="receta__cantidad">12 <abbr title="minutos">m</abbr></p>
             </li>
           </ul>
         </div>
-        <div class="receta__elaboracion box--highlight">
-          <div class="receta__elaboracion-pasos">
-            <h2 class="underscore">Elaboración</h2>
-            <img class="float-left lozad" width="85" height="108" data-src="img/cocinero-y-chef-imagen-animada-0049.gif" alt="Animación cocinero">
-            <p class="receta__dificultad">Dificultad: Alta</p>
-            <ul class="receta__lista-pasos">
-              <li class="receta__paso dotted">
-                <p class="receta__descripcion">Tiempo total</p>
-                <p class="receta__cantidad">
-                  12 <abbr title="hora">h </abbr>12 <abbr title="minutos">m</abbr>
-                </p>
-              </li>
-              <li class="receta__paso dotted">
-                <p class="receta__descripcion">Elaboración</p>
-                <p class="receta__cantidad">12 <abbr title="hora">h </abbr></p>
-              </li>
-              <li class="receta__paso dotted">
-                <p class="receta__descripcion">Cocción</p>
-                <p class="receta__cantidad">12 <abbr title="minutos">m</abbr></p>
-              </li>
-            </ul>
-          </div>
-          <div class="detalle__txt">
-            <picture class="descripcion__img-left lozad" data-alt="Foto ensaimada de chocolate" data-iesrc="img/ensaimada_grande.jpg">
-              <source type="image/avif" srcset="img/ensaimada_grande.avif">
-              <source type="image/webp" srcset="img/ensaimada_grande.webp">
-              <source media="(min-width: 768px)" srcset="img/ensaimada_grande.jpg">            
-              <source media="(max-width: 767px)" srcset="img/ensaimada_grande_movil.jpg">
-            </picture>
-            <p>
-              Empezando calentando ligeramente el agua, la ponemos en un bol y deshacemos en ella la
-              levadura. En un bol grande ponemos la harina y añadimos el agua con la levadura, el
-              huevo batido, el azúcar y la sal. Amasamos quince minutos o hasta que consigamos una
-              masa lisa.
-            </p>
-            <p>
-              Hacemos una bola, la ponemos en un bol untado con aceite y dejamos que doble de
-              volumen, como mínimo una hora. La amasamos para sacar el aire y la dividimos en seis
-              partes. Amasar cada una de ellas y estirarlas mucho con ayuda de un rodillo.
-            </p>
-            <p>
-              Cuando estén bien estiradas, las untamos muy muy generosamente con la manteca de
-              cerdo, debemos ser generosos a la hora de formar esta capa de manteca sobre la masa.
-              Estiramos con las manos para que la masa quede bien fina, puede ser que se rompa pero
-              no pasa nada. Enrollamos formando un rulo con cada porción.
-            </p>
-            <picture class="descripcion__img-right lozad" data-alt="Foto ensaimada nata" data-iesrc="img/ensaimada_de_nata.jpg">
-              <source type="image/avif" srcset="img/ensaimada_de_nata.avif">
-              <source type="image/webp" srcset="img/ensaimada_de_nata.webp">
-              <source media="(min-width: 768px)" srcset="img/ensaimada_de_nata.jpg">            
-              <source media="(max-width: 767px)" srcset="img/ensaimada_de_nata_movil.jpg">
-            </picture>
-            <p>
-              Dejamos reposar los rulos hasta que la masa pierda nervio, lo ideal es una hora.
-              Después estiramos los rulos para que queden lo más finos posibles. Forramos dos
-              bandejas de horno con papel de hornear y realizamos una espiral sobre ella con cada
-              porción. Debemos dejar espacio entre las curvas de la espiral, para que al levar la
-              masa no se monte, debe quedar una ensaimada plana no subida.
-            </p>
-            <p>
-              Guardamos las dos bandejas en el horno con una taza de agua y dejamos levar las
-              ensaimadas toda la noche o unas 10 horas. Este paso es muy importante, porque las
-              ensaimadas deben fermentar con lentitud para que queden bien. Pasado este tiempo,
-              calentamos el horno a 200ºC y las cocemos unos 10-12 minutos. Una vez frías se
-              espolvorean con mucho azúcar molido.
-            </p>
-            <p>
-              Fuente:
-              <a
-                class="link"
-                href="https://www.directoalpaladar.com/postres/ensaimada-de-mallorca-receta-tradicional"
-                ><cite>María José - Directo al paladar</cite></a
-              >
-            </p>
-            <p>
-              Y para quien venga de visita a Mallorca y no le apetezca cocinar lo ideal es llevarse alguna ensaiamda como obsequio.
-              Pueden comprarse en cualquier horno de las Islas y las podrá disfrutar con sus amigos y familiares
-            </p>
-            <img class="detalle__img lozad" width="400" height="267" data-src="img/ensaimada_2048.jpg" alt="Ensaimada para llevar" width="400" height="265"
+        <div class="detalle__txt">
+          <picture class="descripcion__img-left lozad" data-alt="Foto ensaimada de chocolate"
+            data-iesrc="img/ensaimada_grande.jpg">
+            <source type="image/avif" srcset="img/ensaimada_grande.avif">
+            <source type="image/webp" srcset="img/ensaimada_grande.webp">
+            <source media="(min-width: 768px)" srcset="img/ensaimada_grande.jpg">
+            <source media="(max-width: 767px)" srcset="img/ensaimada_grande_movil.jpg">
+          </picture>
+          <p>
+            Empezando calentando ligeramente el agua, la ponemos en un bol y deshacemos en ella la
+            levadura. En un bol grande ponemos la harina y añadimos el agua con la levadura, el
+            huevo batido, el azúcar y la sal. Amasamos quince minutos o hasta que consigamos una
+            masa lisa.
+          </p>
+          <p>
+            Hacemos una bola, la ponemos en un bol untado con aceite y dejamos que doble de
+            volumen, como mínimo una hora. La amasamos para sacar el aire y la dividimos en seis
+            partes. Amasar cada una de ellas y estirarlas mucho con ayuda de un rodillo.
+          </p>
+          <p>
+            Cuando estén bien estiradas, las untamos muy muy generosamente con la manteca de
+            cerdo, debemos ser generosos a la hora de formar esta capa de manteca sobre la masa.
+            Estiramos con las manos para que la masa quede bien fina, puede ser que se rompa pero
+            no pasa nada. Enrollamos formando un rulo con cada porción.
+          </p>
+          <picture class="descripcion__img-right lozad" data-alt="Foto ensaimada nata"
+            data-iesrc="img/ensaimada_de_nata.jpg">
+            <source type="image/avif" srcset="img/ensaimada_de_nata.avif">
+            <source type="image/webp" srcset="img/ensaimada_de_nata.webp">
+            <source media="(min-width: 768px)" srcset="img/ensaimada_de_nata.jpg">
+            <source media="(max-width: 767px)" srcset="img/ensaimada_de_nata_movil.jpg">
+          </picture>
+          <p>
+            Dejamos reposar los rulos hasta que la masa pierda nervio, lo ideal es una hora.
+            Después estiramos los rulos para que queden lo más finos posibles. Forramos dos
+            bandejas de horno con papel de hornear y realizamos una espiral sobre ella con cada
+            porción. Debemos dejar espacio entre las curvas de la espiral, para que al levar la
+            masa no se monte, debe quedar una ensaimada plana no subida.
+          </p>
+          <p>
+            Guardamos las dos bandejas en el horno con una taza de agua y dejamos levar las
+            ensaimadas toda la noche o unas 10 horas. Este paso es muy importante, porque las
+            ensaimadas deben fermentar con lentitud para que queden bien. Pasado este tiempo,
+            calentamos el horno a 200ºC y las cocemos unos 10-12 minutos. Una vez frías se
+            espolvorean con mucho azúcar molido.
+          </p>
+          <p class="changeable">
+            Fuente:
+            <a class="link--underline"
+              href="https://www.directoalpaladar.com/postres/ensaimada-de-mallorca-receta-tradicional"><cite>María José
+                - Directo al paladar</cite></a>
+          </p>
+          <p>
+            Y para quien venga de visita a Mallorca y no le apetezca cocinar lo ideal es llevarse alguna ensaiamda como
+            obsequio.
+            Pueden comprarse en cualquier horno de las Islas y las podrá disfrutar con sus amigos y familiares
+          </p>
+          <img class="detalle__img lozad" width="400" height="267" data-src="img/ensaimada_2048.jpg"
+            alt="Ensaimada para llevar" width="400" height="265"
             data-srcset="img/ensaimada_160.jpg 160w, img/ensaimada_400.jpg 400, img/ensaimada_800.jpg 640w, img/ensaimada_1024.jpg 1024w"
-            sizes="(max-width: 768px) 200px, (max-width: 1224px) 1000px, 1440px"/>
-          </div>
-          <h2>Video receta</h2>
-          <div class="container">
-            <iframe width="552" height="310"
-              class="responsive-iframe lozad"
-              data-src="https://www.youtube.com/embed/YdOiW3S4D8I"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <p><cite>Cómo se hace Ensaimada mallorquina. RECETA FÁCIL | Youtube</cite></p>
+            sizes="(max-width: 768px) 200px, (max-width: 1224px) 1000px, 1440px" />
         </div>
-      </section>
-      <section class="categoria">
-        <h2>Prductos relacionados</h2>
-        <ul class="categoria__lista">
-          <li class="categoria__item">
-            <figure>
-              <a href="detall.html">
-                <img class="categoria__img lozad" width="400" height="266"
-                    data-srcset="img/robiols_400.jpg,
+        <h2>Video receta</h2>
+        <div class="container">
+          <iframe width="552" height="310" class="responsive-iframe lozad"
+            data-src="https://www.youtube.com/embed/YdOiW3S4D8I"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <p><cite>Cómo se hace Ensaimada mallorquina. RECETA FÁCIL | Youtube</cite></p>
+      </div>
+    </section>
+    <section class="categoria">
+      <h2>Prductos relacionados</h2>
+      <ul class="categoria__lista changeable">
+        <li class="categoria__item">
+          <figure>
+            <a href="detall.html">
+              <img class="categoria__img lozad" width="400" height="266" data-srcset="img/robiols_400.jpg,
                             img/robiols_600.jpg 1.5x,
-                            img/robiols_800.jpg 2x" 
-                    data-src="img/robiols_400.jpg" alt="Robiols">
+                            img/robiols_800.jpg 2x" data-src="img/robiols_400.jpg" alt="Robiols">
             </a>
-            </figure>
-            <p><a href="detall.html">Robiols</a></p>
-          </li>
-          <li class="categoria__item">
-            <figure>
-              <a href="detall.html">
-                <img class="categoria__img lozad" width="400" height="266"
-                    data-srcset="img/crespells_400.jpg,
+          </figure>
+          <p><a class="link" href="detall.html">Robiols</a></p>
+        </li>
+        <li class="categoria__item">
+          <figure>
+            <a href="detall.html">
+              <img class="categoria__img lozad" width="400" height="266" data-srcset="img/crespells_400.jpg,
                             img/crespells_600.jpg 1.5x,
-                            img/crespells_800.jpg 2x" 
-                    data-src="img/crespells_400.jpg" alt="Crespells">
-            </figure>
-            <p><a href="detall.html">Crespells</a></p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="pie-portada box--highlight globalpadding">
-    <nav class="menu-site globalpadding box--highlight">
+                            img/crespells_800.jpg 2x" data-src="img/crespells_400.jpg" alt="Crespells">
+          </figure>
+          <p><a class="link" href="detall.html">Crespells</a></p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="pie-portada box--highlight">
+    <nav class="menu-site box--highlight changeable">
       <ul>
-        <li><a href="index.html">Portada</a></li>
-        <li><a href="presentacion.html">Presentación</a></li>
-        <li><a href="categorias.html">Categorías</a></li>
-        <li><a href="enlaces.html">Enlaces</a></li>
+        <li><a class="link" href="index.html">Portada</a></li>
+        <li><a class="link" href="presentacion.html">Presentación</a></li>
+        <li><a class="link" href="categorias.html">Categorías</a></li>
+        <li><a class="link" href="enlaces.html">Enlaces</a></li>
       </ul>
     </nav>
-    <div class="pie__copyright"><img class="footer__img lozad" data-src="img/mini_icon.svg" alt="Mini icono ensaimada" width="48" height="42">2021 © Pedro Tous Durán</div>
-    </footer>
-    <script src="js/lozad.js"></script>
-  </body>
+    <div class="pie__copyright"><img class="footer__img" src="img/mini_icon.svg" alt="Mini icono ensaimada" width="48"
+        height="42">2021 © Pedro Tous Durán</div>
+  </footer>
+  <script src="js/lozad.js"></script>
+  <script src="js/willchange.js" async></script>
+</body>
+
 </html>
