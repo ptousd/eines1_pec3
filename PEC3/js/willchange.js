@@ -6,11 +6,11 @@ elems.forEach(el => {
 });
 
 function hintBrowser() {
-  console.log("Dentor");
+  console.log("Dentro");
   this.style.willChange = 'transform, opacity';
 }
 
 function removeHint() {
-console.log("Fuera");
+  console.log("Fuera");
   this.style.willChange = 'auto';
 }
